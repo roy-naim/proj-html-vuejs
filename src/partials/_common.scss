@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font_family;
+}
+
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #98939f;
+}
+
+ul, li {
+  list-style: none;
+}
+
+i {
+  margin: 0 5px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  padding: 13px 23px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  &.btn-dodgeblue {
+    background-color: #4154fe;
+    color: white;
+  }
+  &.btn-transp {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
