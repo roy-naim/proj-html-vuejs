@@ -9,7 +9,19 @@
 
 var app = new Vue({
   el: '#root',
-  data: {}
+  data: {
+    names: [{
+      title: 'Home'
+    }, {
+      title: 'Services'
+    }, {
+      title: 'About'
+    }, {
+      title: 'Videos'
+    }, {
+      title: 'Blog'
+    }]
+  }
 });
 
 /***/ }),
