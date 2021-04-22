@@ -41,10 +41,36 @@ i {
   }
   &.btn-transp {
     background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: 3px solid white;
+    border-color: #2c2a35;
   }
+}
+
+.mx-20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.my-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.px-20 {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .py-20 {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.py-165 {
+  padding-top: 165px;
+  padding-bottom: 165px;
+}
+
+.red-f {
+  color: $text_red;
 }
