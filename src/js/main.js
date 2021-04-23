@@ -1,13 +1,14 @@
+Vue.config.devtools = true;
 var app = new Vue(
   {
   el: '#root',
   data: {
     names: [
       {
-      title: 'Home',
+        title: 'Home',
       },
       {
-      title: 'Services',
+        title: 'Services',
       },
       {
         title: 'About',
@@ -18,7 +19,8 @@ var app = new Vue(
       {
         title: 'Blog',
       },
-    ]
+    ],
+
   },
   }
 );

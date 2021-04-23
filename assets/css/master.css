@@ -31,6 +31,10 @@ i {
   text-transform: uppercase;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .btn {
   padding: 13px 23px;
   border-radius: 20px;
@@ -152,4 +156,21 @@ li .box-icon {
 
 .section-1 {
   background-image: linear-gradient(135deg, #0219eb, #d5000b);
+}
+.section-1 .card {
+  position: relative;
+  top: -70px;
+}
+.section-1 .card .box-sect1 {
+  width: calc(100% / 3 - 15px);
+  margin: 0 15px;
+}
+.section-1 .card .box-sect1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 50px 0;
+}
+.section-1 .citation {
+  margin: 0 100px;
+  color: white;
 }
