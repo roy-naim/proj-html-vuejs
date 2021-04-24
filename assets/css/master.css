@@ -50,6 +50,10 @@ i {
   border: 3px solid white;
   border-color: #2c2a35;
 }
+.btn.btn-newgreen {
+  background-color: #41C457;
+  color: white;
+}
 
 .mx-20 {
   margin-left: 20px;
@@ -204,14 +208,46 @@ li .box-icon {
   border-radius: 50%;
 }
 
+.section-2 {
+  margin-bottom: 120px;
+}
 .section-2 .card {
   position: relative;
   top: -70px;
 }
 .section-2 .card .box-sect2 {
-  width: calc(100% / 2);
+  width: calc(100% / 2 + 250px);
+  height: 100%;
 }
 .section-2 .card .box-sect2 img {
   width: 100%;
   border-radius: 3px 3px 50px 3px;
+}
+.section-2 .text-sect2 h3 {
+  font-size: 30px;
+  margin-bottom: 50px;
+  color: #4154fe;
+}
+.section-2 .text-sect2 h1 {
+  font-size: 50px;
+}
+.section-2 .text-sect2 p {
+  font-size: 20px;
+}
+.section-2 .video-sect2 {
+  width: calc(100% / 3 - 10px);
+}
+.section-2 .video-sect2 img {
+  width: 100%;
+  border-radius: 3px 3px 50px 3px;
+  margin-bottom: 30px;
+}
+.section-2 .video-sect2 h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #000;
+}
+.section-2 .video-sect2 p {
+  color: #4154fe;
+  font-weight: bold;
 }
