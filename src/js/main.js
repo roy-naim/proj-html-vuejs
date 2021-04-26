@@ -6,21 +6,52 @@ var app = new Vue(
     names: [
       {
         title: 'Home',
+        extra: false,
       },
       {
         title: 'Services',
+        extra: false,
+
       },
       {
         title: 'About',
+        extra: false,
+
       },
       {
         title: 'Videos',
+        extra: false,
+
       },
       {
         title: 'Blog',
+        extra: false,
       },
-    ]
+      {
+        title: 'Store',
+        extra: true,
+      },
+
+    ],
+
+    keys: [
+      {
+        title: 'Schedule a workout',
+        link: 'https://avada.theme-fusion.com/fitness/contact/',
+      },
+    ],
+
+    icons: [
+      {
+        class: 'fas fa-search',
+      },
+
+      {
+        class: 'fas fa-shopping-cart',
+      },
+    ],
 
   },
+
   }
 );

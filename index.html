@@ -20,13 +20,16 @@
           <img src="./assets/img/logo.png" alt="arava-logo">
           <div class="list-dropdown">
             <ul class="flex">
-              <li v-for="name in names"><a href="#"> {{ name.title}} </a></li>
-              <li><a href="#">Store <span class="box-icon">new</span></a></li>
-              <li>
-                <button class="btn btn-dodgeblue" type="button">Schedule a workout</button>
+              <li v-for="name in names"><a href="#"> {{ name.title}} </a>
+                <span class="box-icon" v-if="(name.extra)"><a href="#">new</a></span></li>
+              <!-- <li><a href="#">Store <span class="box-icon">new</span></a></li> -->
+                <!-- <button class="btn btn-dodgeblue" type="button">Schedule a workout</button> -->
+              <li v-for="key in keys">
+                <button class="btn btn-dodgeblue" type="button"><a href="{{key.link}}">{{ key.title }}</a></button>
+
+                <!-- <button class="btn btn-dodgeblue" type="button">Schedule a workout</button> -->
               </li>
-              <li><i class="fas fa-search"></i></li>
-              <li><i class="fas fa-shopping-cart"></i></li>
+              <li v-for="icon in icons"><i :class="`${ icon.class }`"></i></li>
             </ul>
 
           </div>
@@ -86,13 +89,11 @@
 
       <!-- SECTION 2 -->
       <section class="section-2">
-        <div class="flex">
-          <div class="card">
-            <div class="box-sect2">
-              <img src="./assets/img/woman-pushup.jpg" alt="woman-push">
-            </div>
+        <div class="flex-wrap">
+          <div class="card width-50">
+            <img src="./assets/img/woman-pushup.jpg" alt="woman-push">
           </div>
-          <div class="text-sect2">
+          <div class="text-sect2 width-50">
             <h3>Tune up your workouts</h3>
             <h1>The best health & fitness advice online</h1>
             <p>Arcu eu facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo integer sit pellentesque.</p>
@@ -102,7 +103,7 @@
         <div class="container">
           <div class="feature flex-spacebet">
             <h3>Featured Playlists</h3>
-            <p><a href="">View all videos <i class="fas fa-chevron-right"></i></a></p>
+            <p><a href="#">View all videos <i class="fas fa-chevron-right"></i></a></p>
           </div>
           <div class="flex my-30 text-center">
             <div class="video-sect2"><a href="#">
@@ -137,7 +138,7 @@
             <h1>Insider offers & flash sales in your inbox every week.</h1>
             <p><i class="fas fa-grip-lines"></i></p>
             <div class="flex my-30">
-              <input type="mail" placeholder="Insert yor mail ...*">
+              <input type="mail" placeholder="Insert your mail ...*">
               <button class="btn btn-dodgeblue" type="button">Subscribe</button>
             </div>
             <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet, consectetur adipiscing elit sed porttitor lectus.</p>
@@ -146,8 +147,32 @@
       </section>
 
       <!-- SECTION 4 -->
-      <section>
+      <section class="section-4 py-165">
+        <div class="container">
+          <div class="card flex-wrap">
+            <div class="box-sect4 text-center">
+              <h2>Team Training</h2>
+              <h3>Find a partner</h3>
+              <p>Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.</p>
+              <p><a href="#">Find a Partner <i class="fas fa-chevron-right"></i></a></p>
 
+            </div>
+            <div class="box-sect4 text-center">
+              <h2>Team Training</h2>
+              <h3>Find a partner</h3>
+              <p>Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.</p>
+              <p><a href="#">Learn about Crossfit <i class="fas fa-chevron-right"></i></a></p>
+
+            </div>
+            <div class="box-sect4 text-center">
+              <h2>Team Training</h2>
+              <h3>Find a partner</h3>
+              <p>Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.</p>
+              <p><a href="#">Schedule a workout <i class="fas fa-chevron-right"></i></a></p>
+
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- SECTION 5 -->

@@ -12,15 +12,32 @@ var app = new Vue({
   el: '#root',
   data: {
     names: [{
-      title: 'Home'
+      title: 'Home',
+      extra: false
     }, {
-      title: 'Services'
+      title: 'Services',
+      extra: false
     }, {
-      title: 'About'
+      title: 'About',
+      extra: false
     }, {
-      title: 'Videos'
+      title: 'Videos',
+      extra: false
     }, {
-      title: 'Blog'
+      title: 'Blog',
+      extra: false
+    }, {
+      title: 'Store',
+      extra: true
+    }],
+    keys: [{
+      title: 'Schedule a workout',
+      link: 'https://avada.theme-fusion.com/fitness/contact/'
+    }],
+    icons: [{
+      "class": 'fas fa-search'
+    }, {
+      "class": 'fas fa-shopping-cart'
     }]
   }
 });
