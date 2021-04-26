@@ -15,6 +15,22 @@
 <body>
   <div id="root">
     <header>
+      <div class="flex-col-no-al demo-buy">
+        <div class="quadrato text-center">
+          <a href="#">
+            <i class="fas fa-folder-open"></i>
+            <p>Demos</p>
+          </a>
+
+        </div>
+        <div class="quadrato text-center">
+          <a href="#">
+            <i class="fas fa-shopping-cart"></i>
+            <p>On Sale</p>
+          </a>
+        </div>
+      </div>
+
       <div class="container">
         <nav class="flex-spacebet py-20">
           <img src="./assets/img/logo.png" alt="arava-logo">
@@ -25,7 +41,7 @@
               <!-- <li><a href="#">Store <span class="box-icon">new</span></a></li> -->
                 <!-- <button class="btn btn-dodgeblue" type="button">Schedule a workout</button> -->
               <li v-for="key in keys">
-                <button class="btn btn-dodgeblue" type="button"><a href="{{key.link}}">{{ key.title }}</a></button>
+                <button class="btn btn-dodgeblue" type="button"><a :href='`${key.link}`'>{{ key.title }}</a></button>
 
                 <!-- <button class="btn btn-dodgeblue" type="button">Schedule a workout</button> -->
               </li>
@@ -38,14 +54,20 @@
       <!-- JUMBOTRON -->
       <div class="jumbotron">
         <div class="container flex-spacebet">
-          <div class="jumbo-left flex-col py-165">
+          <div class="jumbo-left flex-col-no-al py-165">
             <h2 class="red-f">Certified fitness professional</h2>
             <h1>Take control of your health</h1>
-            <p><i class="fas fa-grip-lines"></i></p>
+            <p>
+              <img width="70px" src="./assets/img/waves-yellow.svg" alt="waves">
+            </p>
             <p><b>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.</b></p>
             <div class="flex my-30">
-              <button class="btn btn-dodgeblue" type="button">Visit my YouTube channel</button>
-              <button class="btn btn-transp px-20 mx-20" type="button">Buy Avada today<i class="fas fa-arrow-right"></i></button>
+              <div class="button-jumbo">
+                <button class="btn btn-dodgeblue" type="button"><i class="fab fa-youtube"></i> Visit my YouTube channel</button>
+              </div>
+              <div class="button-traspa">
+                <button class="btn btn-transp px-20 mx-20" type="button"><a href="#">Buy Avada today<i class="fas fa-arrow-right"></i></a></button>
+              </div>
             </div>
           </div>
           <div class="jumbo-right">
@@ -63,19 +85,43 @@
         <div class="container">
           <div class="card flex">
             <div class="box-sect1">
+              <div class="group-text">
+                <p>
+                  <img class="waves" src="./assets/img/waves-yellow.svg" alt="waves">
+                </p>
+                <h1>Crossfit Workout</h1>
+                <h3>Push your limits</h3>
+              </div>
               <img src="./assets/img/box1-2x.jpg" alt="box1">
+
             </div>
             <div class="box-sect1">
+              <div class="group-text">
+                <p>
+                  <img class="waves" src="./assets/img/waves-yellow.svg" alt="waves">
+                </p>
+                <h1>Crossfit Workout</h1>
+                <h3>Push your limits</h3>
+              </div>
               <img src="./assets/img/box2-2x.jpg" alt="box2">
             </div>
             <div class="box-sect1">
+              <div class="group-text">
+                <p>
+                  <img class="waves" src="./assets/img/waves-yellow.svg" alt="waves">
+                </p>
+                <h1>Crossfit Workout</h1>
+                <h3>Push your limits</h3>
+              </div>
               <img src="./assets/img/box3-2x.jpg" alt="box3">
             </div>
           </div>
 
           <div class="citation text-center">
             <h1>“How you respond to the challenge in the second half will determine what you become after the game, whether you are a winner or a loser.”</h1>
-            <p><i class="fas fa-grip-lines"></i></p>
+            <p>
+              <img width="70px" src="./assets/img/waves-yellow.svg" alt="waves">
+            </p>
             <div class="icon-person flex-center">
               <span class="athlete">
                 <img src="./assets/img/athlete.jpg" alt="athlete">
@@ -91,6 +137,9 @@
       <section class="section-2">
         <div class="flex-wrap">
           <div class="card width-50">
+            <span class="play">
+              <i class="fas fa-play"></i>
+            </span>
             <img src="./assets/img/woman-pushup.jpg" alt="woman-push">
           </div>
           <div class="text-sect2 width-50">
@@ -102,25 +151,41 @@
         </div>
         <div class="container">
           <div class="feature flex-spacebet">
+
             <h3>Featured Playlists</h3>
             <p><a href="#">View all videos <i class="fas fa-chevron-right"></i></a></p>
           </div>
           <div class="flex my-30 text-center">
             <div class="video-sect2"><a href="#">
-              <img src="./assets/img/video1-2x.jpg" alt="box1">
+              <div class="play-img">
+                <span class="play">
+                  <i class="fas fa-play"></i>
+                </span>
+                <img src="./assets/img/video1-2x.jpg" alt="box1">
+              </div>
               <h4>Thighs & glute workout</h4>
               <p>Increase your mobility</p>
             </a>
 
             </div>
             <div class="video-sect2 mx-20"><a href="#">
-              <img src="./assets/img/video2-2x.jpg" alt="box2">
+              <div class="play-img">
+                <span class="play">
+                  <i class="fas fa-play"></i>
+                </span>
+                <img src="./assets/img/video2-2x.jpg" alt="box2">
+              </div>
               <h4>Lift, firm & perk up</h4>
               <p>Feel young again</p>
             </a>
             </div>
             <div class="video-sect2"><a href="#">
-              <img src="./assets/img/video3-2x.jpg" alt="box3">
+              <div class="play-img">
+                <span class="play">
+                  <i class="fas fa-play"></i>
+                </span>
+                <img src="./assets/img/video3-2x.jpg" alt="box3">
+              </div>
               <h4>Slim & trim your waist</h4>
               <p>Shed those extra pounds</p>
             </a>
@@ -133,10 +198,12 @@
       <!-- SECTION 3 -->
       <section class="section-3">
         <div class="container flex-spacebet">
-          <div class="jumbo-left flex-col py-165">
+          <div class="jumbo-left flex-col-no-al py-165">
             <h2 class="red-f">Join our mailing list today</h2>
             <h1>Insider offers & flash sales in your inbox every week.</h1>
-            <p><i class="fas fa-grip-lines"></i></p>
+            <p>
+              <img width="70px" src="./assets/img/waves-yellow.svg" alt="waves">
+            </p>
             <div class="flex my-30">
               <input type="mail" placeholder="Insert your mail ...*">
               <button class="btn btn-dodgeblue" type="button">Subscribe</button>
@@ -211,7 +278,9 @@
       <section class="section-6 flex-col text-center py-165">
         <div class="container-small">
           <h1>“I’ve failed over and over again in my life. And that is why I succeed.”</h1>
-          <p><i class="fas fa-grip-lines"></i></p>
+          <p>
+            <img width="70px" src="./assets/img/waves-yellow.svg" alt="waves">
+          </p>
           <p>Arcu auctor gravida nisl, congue sit nisi tincidunt eget proin. In lacinia lacus donec sed massa in ipsum eros, tristique. Gravida suspendisse etiam in iaculis</p>
           <button class="btn btn-dodgeblue" type="button">Buy Arava today</button>
         </div>
@@ -223,21 +292,27 @@
           <div class="card flex-wrap">
             <div class="box-sect7 text-center">
               <img src="./assets/img/sponsor-1sm-2x.png" alt="yoga">
-              <p><i class="fas fa-grip-lines"></i></p>
+              <p>
+                <img width="70px" src="./assets/img/waves-blue.svg" alt="waves">
+              </p>
               <p>Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.</p>
               <p><a href="#">Find a Partner <i class="fas fa-chevron-right"></i></a></p>
 
             </div>
             <div class="box-sect7 text-center">
               <img src="./assets/img/sponsor-2sm-2x.png" alt="yoga">
-              <p><i class="fas fa-grip-lines"></i></p>
+              <p>
+                <img width="70px" src="./assets/img/waves-blue.svg" alt="waves">
+              </p>
               <p>Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.</p>
               <p><a href="#">Find a Partner <i class="fas fa-chevron-right"></i></a></p>
 
             </div>
             <div class="box-sect7 text-center">
               <img src="./assets/img/sponsor-3sm-2x.png" alt="yoga">
-              <p><i class="fas fa-grip-lines"></i></p>
+              <p>
+                <img width="70px" src="./assets/img/waves-blue.svg" alt="waves">
+              </p>
               <p>Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.</p>
               <p><a href="#">Find a Partner <i class="fas fa-chevron-right"></i></a></p>
 
@@ -245,7 +320,9 @@
 
             <div class="box-sect7 text-center">
               <img src="./assets/img/sponsor-4sm-2x.png" alt="yoga">
-              <p><i class="fas fa-grip-lines"></i></p>
+              <p>
+                <img width="70px" src="./assets/img/waves-blue.svg" alt="waves">
+              </p>
               <p>Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.</p>
               <p><a href="#">Find a Partner <i class="fas fa-chevron-right"></i></a></p>
 
@@ -275,11 +352,7 @@
               <img src="./assets/img/logo-footer.png" alt="logo-footer">
               <p>Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.</p>
               <ul class="flex-spacear">
-                <li><a href="#"><i class="social-ic fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="social-ic fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="social-ic fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="social-ic fab fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="social-ic fab fa-youtube"></i></a></li>
+                <li v-for="social in socials"><a class="social-ic" href="#"><i :class="`${social.class}`"></i></a></li>
               </ul>
 
             </div>

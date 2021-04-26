@@ -7,4 +7,13 @@ li {
     padding: 5px;
     font-size: 0.8em;
   }
+
+  &:hover .btn-dodgeblue {
+  background-color: #41C457;
+  transition: all 0.5s;
+  }
+  &:hover a {
+    color: white;
+    transition: all 0.5s;
+  }
 }

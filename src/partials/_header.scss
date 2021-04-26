@@ -3,6 +3,25 @@
 header {
   background-color: black;
   color: #98939f;
+  .demo-buy {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    .quadrato {
+      background-color: #fff;
+      padding: 15px 10px;
+      border-radius: 5px;
+      margin: 10px 0;
+      box-shadow: 0 10px 20px 5px rgb(0 0 0 / 15%);
+      a {
+        color: #33475b;
+        i {
+          font-size: 25px;
+        }
+      }
+
+    }
+  }
   .jumbotron {
     background-image: linear-gradient(90deg, rgb(6, 6, 7) 45%, rgba(6, 6, 7, 0) 75%),url("../img/bg-jumbotron.jpg");
     background-size: cover;
@@ -23,6 +42,30 @@ header {
       padding: 20px 30px;
       border-radius: 35px;
     }
+    .button-jumbo {
+      &:hover .btn-dodgeblue {
+      background-color: #41C457;
+      transition: all 0.5s;
+      }
+      &:hover a {
+        color: white;
+        transition: all 0.5s;
+      }
+    }
+    .button-traspa {
+
+      &:hover .btn-transp {
+      background-color: #fff;
+      transition: all 0.5s;
+      }
+      &:hover a {
+        color: black;
+        transition: all 0.5s;
+      }
+
+    }
+
+
     .play {
       background-color: white;
       border-radius: 50%;

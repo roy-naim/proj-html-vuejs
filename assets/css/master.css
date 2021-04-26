@@ -139,6 +139,11 @@ i {
   align-items: center;
 }
 
+.flex-col-no-al {
+  display: flex;
+  flex-direction: column;
+}
+
 li {
   margin: 0 10px;
 }
@@ -149,10 +154,36 @@ li .box-icon {
   padding: 5px;
   font-size: 0.8em;
 }
+li:hover .btn-dodgeblue {
+  background-color: #41C457;
+  transition: all 0.5s;
+}
+li:hover a {
+  color: white;
+  transition: all 0.5s;
+}
 
 header {
   background-color: black;
   color: #98939f;
+}
+header .demo-buy {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+}
+header .demo-buy .quadrato {
+  background-color: #fff;
+  padding: 15px 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.15);
+}
+header .demo-buy .quadrato a {
+  color: #33475b;
+}
+header .demo-buy .quadrato a i {
+  font-size: 25px;
 }
 header .jumbotron {
   background-image: linear-gradient(90deg, #060607 45%, rgba(6, 6, 7, 0) 75%), url("../img/bg-jumbotron.jpg");
@@ -175,6 +206,22 @@ header .jumbotron button {
   padding: 20px 30px;
   border-radius: 35px;
 }
+header .jumbotron .button-jumbo:hover .btn-dodgeblue {
+  background-color: #41C457;
+  transition: all 0.5s;
+}
+header .jumbotron .button-jumbo:hover a {
+  color: white;
+  transition: all 0.5s;
+}
+header .jumbotron .button-traspa:hover .btn-transp {
+  background-color: #fff;
+  transition: all 0.5s;
+}
+header .jumbotron .button-traspa:hover a {
+  color: black;
+  transition: all 0.5s;
+}
 header .jumbotron .play {
   background-color: white;
   border-radius: 50%;
@@ -196,6 +243,14 @@ li .box-icon {
   padding: 5px;
   font-size: 0.8em;
 }
+li:hover .btn-dodgeblue {
+  background-color: #41C457;
+  transition: all 0.5s;
+}
+li:hover a {
+  color: white;
+  transition: all 0.5s;
+}
 
 .section-1 {
   background-image: linear-gradient(135deg, #0219eb, #d5000b);
@@ -206,6 +261,7 @@ li .box-icon {
   top: -70px;
 }
 .section-1 .card .box-sect1 {
+  position: relative;
   width: calc(100% / 3 - 20px);
   margin: 0 15px;
 }
@@ -213,6 +269,24 @@ li .box-icon {
   width: 100%;
   height: 100%;
   border-radius: 3px 3px 50px 3px;
+}
+.section-1 .card .box-sect1 img:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+  box-shadow: 1px 15px 15px #000;
+}
+.section-1 .card .box-sect1 .group-text {
+  position: absolute;
+  z-index: 2;
+  bottom: 40px;
+  left: 30px;
+  color: white;
+}
+.section-1 .card .box-sect1 .group-text .waves {
+  width: 80px;
+}
+.section-1 .card .box-sect1 .group-text h3 {
+  color: yellow;
 }
 .section-1 .citation {
   margin: 0 200px;
@@ -242,6 +316,20 @@ li .box-icon {
   position: relative;
   top: -70px;
 }
+.section-2 .card .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 50%;
+  padding: 40px;
+  text-align: center;
+}
+.section-2 .card .play i {
+  color: #4154fe;
+  font-size: 20px;
+}
 .section-2 .card img {
   width: 100%;
   border-radius: 3px 3px 50px 3px;
@@ -265,6 +353,22 @@ li .box-icon {
 }
 .section-2 .video-sect2 {
   width: calc(100% / 3 - 10px);
+}
+.section-2 .video-sect2 .play-img {
+  position: relative;
+}
+.section-2 .video-sect2 .play-img .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 50%;
+  padding: 20px;
+  text-align: center;
+}
+.section-2 .video-sect2 .play-img .play i {
+  color: #4154fe;
 }
 .section-2 .video-sect2 img {
   width: 100%;
@@ -336,6 +440,9 @@ li .box-icon {
   width: 100%;
   margin-bottom: 30px;
 }
+.section-5 .video-sect5 img:hover {
+  background-color: blue;
+}
 .section-5 .video-sect5 h4 {
   font-size: 20px;
   margin-bottom: 10px;
@@ -348,7 +455,7 @@ li .box-icon {
 }
 
 .section-6 {
-  background-image: linear-gradient(360deg, #060607 5%, rgba(6, 6, 7, 0) 75%), url("../img/banner2-2x.jpg");
+  background-image: linear-gradient(90deg, #060607 5%, rgba(5, 6, 7, 0) 75%), url("../img/banner2-2x.jpg");
   background-size: cover;
   color: #fff;
 }

@@ -38,6 +38,17 @@ var app = new Vue({
       "class": 'fas fa-search'
     }, {
       "class": 'fas fa-shopping-cart'
+    }],
+    socials: [{
+      "class": 'fab fa-facebook-f'
+    }, {
+      "class": 'fab fa-twitter'
+    }, {
+      "class": 'fab fa-instagram'
+    }, {
+      "class": 'fab fa-linkedin-in'
+    }, {
+      "class": 'fab fa-youtube'
     }]
   }
 });
